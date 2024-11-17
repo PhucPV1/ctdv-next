@@ -1,0 +1,96 @@
+.container {
+    @apply min-h-screen bg-gradient-to-br from-pink-200 to-purple-200 flex flex-col items-center pt-8 px-4;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7cac9+0,92a8d1+100 */
+    background: #f7cac9;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(247, 202, 201, 1) 0%, rgba(146, 168, 209, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(247, 202, 201, 1) 0%, rgba(146, 168, 209, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(247, 202, 201, 1) 0%, rgba(146, 168, 209, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /* IE6-9 fallback on horizontal gradient */
+    letter-spacing: 1px;
+}
+
+.content-container {
+    @apply w-full max-w-xl flex flex-col items-center gap-6;
+}
+
+.logo {
+    @apply w-12 h-12 text-white;
+}
+
+.title {
+    @apply text-2xl font-semibold text-white text-center;
+}
+
+.content {
+    @apply w-full space-y-4;
+    @media (max-width: 739px) {
+        max-width: 80%;
+    }
+}
+
+.partials {
+    @apply space-y-2 text-center;
+}
+
+.partials-title {
+    @apply text-sm text-white;
+}
+
+.partials-title-select {
+    @apply w-full bg-white;
+    & > span {
+       margin: 0 auto;
+    }
+}
+
+.text-area {
+    @apply min-h-[120px] bg-white;
+}
+
+.group-actions {
+    @apply flex justify-center;
+
+    .assign-btn {
+        @apply h-[30px] bg-transparent text-blue-500 font-semibold hover:text-blue-800;
+    }
+    .replicate-btn {
+        @apply h-[30px] bg-transparent font-semibold text-purple-500 hover:text-purple-800;
+    }
+}
+
+.copy-btn {
+    @apply bg-gradient-to-br from-violet-300 to-pink-300 text-white hover:bg-white/30 backdrop-blur-sm;
+    background: linear-gradient(-45deg, rgba(247, 202, 201, 1) 0%, rgba(146, 168, 209, 1) 100%);
+}
+
+.popup-content {
+    @apply sm:max-w-[600px];
+    /* Mobile */
+    @media (max-width: 739px) {
+     max-width: 80%;
+    }
+
+    .popup-container {
+        @apply grid grid-cols-1 gap-4;
+    }
+
+    .popup-header {
+        @apply grid grid-cols-2 md:grid-cols-2 gap-4;
+    }
+}
+
+.popup-group-actions {
+    @apply flex justify-between md:col-span-2 gap-4;
+
+    .assign-btn {
+        @apply flex-1 bg-blue-500 text-white hover:bg-blue-600;
+    }
+    .reload-btn {
+        @apply flex-1;
+    }
+}
