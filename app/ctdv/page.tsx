@@ -152,11 +152,11 @@ ${contentRef.current.value
     
 ${footer}`;
 
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    /* eslint-disable @typescript-eslint/no-unused-vars */
     const _ = isAssigned.value;
     const __ = inputtedContent.value;
     const ___ = isContentChanged.value;
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    /* eslint-enable @typescript-eslint/no-unused-vars */
   });
 
   const handleContent = () => {
