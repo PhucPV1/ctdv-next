@@ -34,17 +34,6 @@ type AssignInfo = {
   info: string;
   phone: string;
 };
-type ActionType = {
-  type:
-    | "setName"
-    | "setBreed"
-    | "setGender"
-    | "setLocation"
-    | "setTime"
-    | "setInfo"
-    | "setPhone";
-  payload: string;
-};
 const initialAssignInfo: AssignInfo = {
   gender: "",
   breed: "",
